@@ -1,4 +1,4 @@
-# Design Document for Blackjack-cli
+# Blackjack-cli
 
 A single-player simplified Blackjack game running in terminal.
 
@@ -63,34 +63,3 @@ This is how game looks like. Player has 5 different options for each step.
 The rule is same as the one of the famous Blackjack game except
 this game does not support betting, doubling, splitting
 considering it is only a single-player game.
-
-## Design Choices
-
-### Structure of the Code
-
-This game has one class, Blackjack, several helper functions functioning like
-the static class in Java and a main file.
-
-The Blackjack was designed to encapsulate all the game-related functions.
-Each function representing a specific module in this game except the
-print functions since I believe it is more organized to separate
-each different print statements to avoid duplications.
-
-The card was originally designed to be another class but it was found
-to be not worth it. Instead, using helper functions inside a namespace
-and representing the cards with simply integers is more efficient.
-
-### Data Structures and Algorithms
-
-For simplicity, most data are stored in vectors.
-
-When calculating the score of Ace (which can be either 1 or 11),
-greedy algorithm was used to decide the best strategy to
-calculate the answer.
-
-### Tooling
-
-The choice of C++ is because personal familiarity with its standard
-libraries and grammars.
-
-Because this game is simply, only the standard libraries were used.

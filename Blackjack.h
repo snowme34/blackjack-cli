@@ -182,7 +182,7 @@ class Blackjack {
 
   public:
   /*
-   * 0-art constructor
+   * 0-arg constructor
    * Parameter: None
    */
   Blackjack(): idx(0), idxDealer(0), idxPlayer(0),

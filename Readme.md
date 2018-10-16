@@ -2,6 +2,8 @@
 
 A single-player simplified Blackjack game running in terminal.
 
+Written in C++
+
 ## Build
 
 Under the directory of source codes,
